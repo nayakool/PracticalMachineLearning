@@ -347,8 +347,11 @@ plot(confMatLDA$table, col = confMatLDA$byClass,
 <h2>5 Final Model Selection</h2>
 <p>Overall accuracy of the 3 models applied are as follows</p>
 <p>1.Decision Trees: 72.8% 2.GBM: 98.74 3.LDA: 71.84%</p>
-<p>GBM seems to be providing the best accuracy hence we will be applying this model to the testing set to answer quiz questions.</p>
-<pre class="r"><code>predictTest=predict(modFitGBM,newdata = testing)</code></pre>
+<p>GBM seems to be providing the best accuracy hence we will be applying this model to the testing set.</p>
+<pre class="r"><code>predictTest=predict(modFitGBM,newdata = testing)
+predictTest</code></pre>
+<pre><code>##  [1] B A B A A E D B A A B C B A E E A B B B
+## Levels: A B C D E</code></pre>
 </div>
 </div>
 

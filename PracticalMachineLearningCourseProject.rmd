@@ -156,11 +156,11 @@ Overall accuracy of the 3 models applied are as follows
 2.GBM: 98.74 
 3.LDA: 71.84% 
 
-GBM seems to be providing the best accuracy hence we will be applying this model to the testing set to answer quiz questions.
+GBM seems to be providing the best accuracy hence we will be applying this model to the testing set.
 
 ```{r echo=TRUE}
 predictTest=predict(modFitGBM,newdata = testing)
-
+predictTest
 ```
 
 
